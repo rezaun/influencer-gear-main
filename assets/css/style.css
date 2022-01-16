@@ -87,6 +87,9 @@ header{
     border: 2px solid #F1E4FF;
     padding: 30px;
 }
+.header-right img:hover{
+    transform: scale(1.5);
+}
 /*customer section css here*/
 .customer{
     padding: 30px 0px;
@@ -187,4 +190,78 @@ footer p{
 }
 .social-icons a:hover{
     background-color: #E02C6D;
+}
+/*responsive css*/
+@media ( max-width : 479px) {
+    .container{
+        width: 100%;
+    }
+    .logo {
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    header{
+        display: inline-block;
+        margin: 50px 0;
+    }
+    .header-left{
+
+    }
+    .header-left h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .header-left p {
+        text-align: center;
+        padding: 20px 20px;
+    }
+    .prebook-now{
+        text-align: center;
+    }
+    .header-left a {
+        padding: 15px 50px;
+    }
+    .header-right{
+        text-align: center;
+    }
+    .header-right img {
+        width: 70%;
+    }
+    .customer {
+        margin: 50px 0;
+        border: none;
+    }
+    .customer {
+        text-align: center;
+    }
+    .customer img {
+        width: 80px;
+        margin-left: 25px;
+        height: 40px;
+        margin-bottom: 13px;
+    }
+    .product{
+        width: 100%;
+    }
+    .product h1 {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .product-wrapper {
+        display: block;
+        margin: 3%;
+    }
+    .single-product {
+        margin-bottom: 5%;
+    }
+    .see-more {
+        margin-top: 35px;
+        margin-right: 5%;
+    }
+}
+
+@media ( min-width : 480px) and (max-width: 767px) {
+
 }
